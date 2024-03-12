@@ -35,7 +35,26 @@ describe('isNumberEven positive test', () => {
   it('should return an error if array is not full of numbers', () => {
     const arraOfValues = [5, '2', 11, 22];
     expect(() => {
-      validator.getEvenNumbersFromArray(arraOfValues);
+      validator.getEvenN4umbersFromArray(arraOfValues);
     }).to.throw('[5,2,11,22] is not an array of "Numbers"');
+  });
+
+  it('should return an error if passed value is not integer', () => {
+    expect(() => {
+      validator.isInteger('4');
+    }).to.throw('[4] is not a number');
+  });
+
+  it('should return truen if passed value is an integer', () => {
+    const validationResults = validator.isInteger(3);
+    expect(validationResults).to.be.equal(true);
+  });
+
+  it('should return an error if array is not full of numbers', () => {
+    const arraOfValues = [1, 2, '3'];
+    expect(() => {
+      validator.isAllNumbers(arraOfValues);
+    }).to.throw('[1, 2, 3] is not an array');
   })
+
 });
