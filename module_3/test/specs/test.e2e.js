@@ -39,14 +39,20 @@ describe('My Login application', () => {
     })
 
     it('username input should have id of username', async () => {
+      await browser.url(`https://the-internet.herokuapp.com/login`)
+
       await expect($('#username')).toHaveId('username')
     })
 
     it('passwrod input should have id of password', async () => {
+      await browser.url(`https://the-internet.herokuapp.com/login`)
+      
       await expect($('#password')).toHaveId('password')
     })
 
     it('flash message should have id of flash', async () => {
+      await browser.url(`https://the-internet.herokuapp.com/login`)
+
       await expect($('//button[@class="radius"]')).toBeClickable()
     })
 
