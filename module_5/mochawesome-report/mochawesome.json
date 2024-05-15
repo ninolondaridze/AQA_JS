@@ -1,0 +1,195 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-15T15:17:38.662Z",
+    "end": "2024-05-15T15:17:42.531Z",
+    "duration": 3869,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bd1ef97d-c884-4960-9c80-7117c9644b20",
+      "title": "",
+      "fullFile": "C:\\Users\\Nino_Londaridze\\Desktop\\homeworks\\homeworks-automated-testing-with-js\\module_5\\specs\\test.spec.js",
+      "file": "\\specs\\test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fd7b2a1f-9eac-4b5d-bd66-ebe9f1558722",
+          "title": "API test suite",
+          "fullFile": "C:\\Users\\Nino_Londaridze\\Desktop\\homeworks\\homeworks-automated-testing-with-js\\module_5\\specs\\test.spec.js",
+          "file": "\\specs\\test.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "POST",
+              "fullTitle": "API test suite POST",
+              "timedOut": false,
+              "duration": 812,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await sendRequest(\"posts\",{\n  title: \"title1\",\n  body: \"body1\",\n  userId: 1\n}, \"post\")\nexpect(response.status).to.equal(201);\nexpect(response.data.title).to.equal(\"title1\");\nexpect(response.data.body).to.equal(\"body1\");\nexpect(response.data.userId).to.equal(1);",
+              "err": {},
+              "uuid": "5aa62940-01a9-4625-9e7c-c7bdfd805a98",
+              "parentUUID": "fd7b2a1f-9eac-4b5d-bd66-ebe9f1558722",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET all resources",
+              "fullTitle": "API test suite GET all resources",
+              "timedOut": false,
+              "duration": 592,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await sendRequest(\"posts\")",
+              "err": {},
+              "uuid": "55a2dee4-d9bc-4628-9113-6f0607f00589",
+              "parentUUID": "fd7b2a1f-9eac-4b5d-bd66-ebe9f1558722",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET a resource",
+              "fullTitle": "API test suite GET a resource",
+              "timedOut": false,
+              "duration": 639,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await sendRequest(\"posts/1\")",
+              "err": {},
+              "uuid": "3b90be06-7605-4073-80c0-52f56c355659",
+              "parentUUID": "fd7b2a1f-9eac-4b5d-bd66-ebe9f1558722",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET filtered resources",
+              "fullTitle": "API test suite GET filtered resources",
+              "timedOut": false,
+              "duration": 606,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await sendRequest(\"posts?userId=1\")",
+              "err": {},
+              "uuid": "9bb7f591-6ba4-4a16-8794-ae396cdf9924",
+              "parentUUID": "fd7b2a1f-9eac-4b5d-bd66-ebe9f1558722",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PUT",
+              "fullTitle": "API test suite PUT",
+              "timedOut": false,
+              "duration": 611,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await sendRequest(\"posts/1\", {\n  title: \"title2\",\n  body: \"body2\",\n  userId: 2\n}, \"put\")\nexpect(response.data.title).to.equal(\"title2\");\nexpect(response.data.body).to.equal(\"body2\");\nexpect(response.data.userId).to.equal(2);",
+              "err": {},
+              "uuid": "04adb9c4-351a-4fb9-8b65-eb8068b27c7d",
+              "parentUUID": "fd7b2a1f-9eac-4b5d-bd66-ebe9f1558722",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "DELETE",
+              "fullTitle": "API test suite DELETE",
+              "timedOut": false,
+              "duration": 598,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await sendRequest(\"posts/1\", \"delete\")\nexpect(response.status).to.equal(200);",
+              "err": {},
+              "uuid": "b571dfbf-39fd-4374-a1cd-8cb47f4ee86d",
+              "parentUUID": "fd7b2a1f-9eac-4b5d-bd66-ebe9f1558722",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5aa62940-01a9-4625-9e7c-c7bdfd805a98",
+            "55a2dee4-d9bc-4628-9113-6f0607f00589",
+            "3b90be06-7605-4073-80c0-52f56c355659",
+            "9bb7f591-6ba4-4a16-8794-ae396cdf9924",
+            "04adb9c4-351a-4fb9-8b65-eb8068b27c7d",
+            "b571dfbf-39fd-4374-a1cd-8cb47f4ee86d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3858,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
