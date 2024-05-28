@@ -11,5 +11,5 @@ test-job:
         paths:
             - "mochawesome-report"
         reports:
-            junit: mochawesome-report/mochawesome.html
+            junit: mochawesome-report/mochawesome.xml
                
