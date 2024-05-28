@@ -2,6 +2,7 @@ test-job:
     stage: test
     image: node:latest
     script:
+        - npm install
         - npm test
 
     only: 
