@@ -8,5 +8,8 @@ test-job:
         - branches
 
     artifacts:
+        paths:
+            - "mochawesome-report"
         reports:
-            mochawesome: mochawesome.html    
+            junit: mochawesome-report/mochawesome.html
+               
