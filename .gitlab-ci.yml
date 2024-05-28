@@ -2,7 +2,6 @@ test-job:
     stage: test
     image: node:latest
     script:
-        - echo "Running test"
         - npm test
 
     only: 
