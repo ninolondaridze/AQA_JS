@@ -5,7 +5,7 @@ test-job:
         - npm test
 
     only: 
-        -branches
+        - branches
 
     artifacts:
         reports:
