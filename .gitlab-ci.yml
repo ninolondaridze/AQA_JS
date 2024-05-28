@@ -1,0 +1,12 @@
+test-job:
+    stage: test
+    script:
+        - echo "Running test"
+        - npm test
+
+    only: 
+        -branches
+
+    artifacts:
+        reports:
+            mochawesome: mochawesome.html    
