@@ -7,9 +7,4 @@ test-job:
     only: 
         - branches
 
-    artifacts:
-        paths:
-            - "mochawesome-report"
-        reports:
-            junit: mochawesome-report/mochawesome.xml
-               
+
