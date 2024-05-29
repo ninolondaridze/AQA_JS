@@ -4,7 +4,6 @@ test-job:
     script:
         - npm ci
         - npm test
-    only:
-        - branches
+
     except:
         - main
