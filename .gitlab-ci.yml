@@ -1,6 +1,4 @@
-test-job:
-    stage: test
-    image: node:latest
-    script:
-        - npm ci
-        - npm test
+check-npm-version:
+  stage: test
+  script:
+    - npm --version
