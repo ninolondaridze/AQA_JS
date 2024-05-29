@@ -35,7 +35,7 @@ describe('isNumberEven test', () => {
   it('should return an error if array is not full of numbers', () => {
     const arraOfValues = [5, '2', 11, 22];
     expect(() => 
-      validator.getEvenNumbersFromArray(arraOfValues);
+      validator.getEvenNumbersFromArray(arraOfValues)
     ).to.throw('[5,2,11,22] is not an array of "Numbers"');
   });
 
