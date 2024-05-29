@@ -2,10 +2,5 @@ test-job:
     stage: test
     image: node:latest
     script:
-        - npm install --save-dev mocha mochawesome mochawesome-report-generator
+        - npm ci
         - npm test
-
-    only: 
-        - branches
-
-
