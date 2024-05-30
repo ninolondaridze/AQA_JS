@@ -8,4 +8,4 @@ test-job:
         - npm ci
         - npm test
     only: 
-        - branches        
+        - branches
