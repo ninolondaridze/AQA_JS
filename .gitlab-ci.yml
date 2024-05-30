@@ -6,4 +6,4 @@ test-job:
         - npm test
 
     only:
-        - ui_bdd_tests
+        - Unit_tests_home_task
