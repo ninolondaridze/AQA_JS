@@ -1,3 +1,6 @@
+variables:
+  DEFAULT_BRANCH: "main"
+
 test-job:
     stage: test
     image: node:latest
