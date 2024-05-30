@@ -5,5 +5,5 @@ test-job:
         - npm ci
         - npm test
 
-    except:
-        - main
+    only:
+        - ui_bdd_tests
