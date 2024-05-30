@@ -4,5 +4,5 @@ test-job:
     script:
         - npm ci
         - npm test
-    only: 
-        - main
+    except: 
+        - master
