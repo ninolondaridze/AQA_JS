@@ -4,6 +4,3 @@ test-job:
     script:
         - npm ci
         - npm test
-
-    only:
-        - Unit_tests_home_task
