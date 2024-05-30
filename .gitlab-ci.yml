@@ -2,9 +2,8 @@ test-job:
     stage: test
     image: node:latest
     script:
+        - npm ci
         - npm test
 
-    only: 
-        - branches
-
-
+    except:
+        - main
