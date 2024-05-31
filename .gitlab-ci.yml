@@ -5,4 +5,4 @@ test-job:
         - npm ci
         - npm test
     rules:
-        - if: '$CI_COMMIT_BRANCH != "master"'
+        - if: '$CI_COMMIT_REF_NAME'
