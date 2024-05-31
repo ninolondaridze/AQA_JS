@@ -4,5 +4,3 @@ test-job:
     script:
         - npm ci
         - npm test
-    rules:
-        - if: '$CI_COMMIT_REF_NAME'
