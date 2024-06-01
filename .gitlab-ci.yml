@@ -6,3 +6,12 @@ Unit tests:
         - npm ci
         - npm test
 
+API tests:
+    stage: test
+    image: node:latest
+    script:
+        - cd API_tests
+        - npm ci
+        - npm test
+
+
