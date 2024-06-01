@@ -1,0 +1,28 @@
+{
+  "name": "homeworks-automated-testing-with",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "module two unit testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "c8 npm test"
+  },
+  "author": "Nino Londaridze",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.29.1",
+    "mocha": "^10.4.0"
+  },
+  "dependencies": {
+    "c8": "^9.1.0",
+    "chai": "^5.1.0",
+    "mochawesome": "^7.1.3"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
