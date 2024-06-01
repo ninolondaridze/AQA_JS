@@ -1,4 +1,18 @@
-test-job:
+UI tests:
+    stage: test
+    image: node:latest
+    script:
+        - npm ci
+        - npm test
+
+Unit tests:
+    stage: test
+    image: node:latest
+    script:
+        - npm ci
+        - npm test
+
+API tests:
     stage: test
     image: node:latest
     script:
