@@ -1,28 +1,24 @@
 default:
   image: node:18
 
-stages:
-  - confidence-check
-  - test
-
-e2e:firefox:
-  stage: confidence-check
-  services:
-    - selenium/standalone-firefox
-  script:
-    - npm test --host=selenium__standalone-firefox
-
-e2e:chrome:
-  stage: confidence-check
+UI_testing_1:
+  stage: test
   services:
     - selenium/standalone-chrome
   script:
     - cd UI_tests_1
     - npm test --host=selenium__standalone-chrome
+    
+UI_testing_2:
+  stage: test
+  services:
+    - selenium/standalone-firefox
+  script:
+    - cd UI_tests_2
+    - npm test --host=selenium__standalone-firefox
 
 Unit tests:
     stage: test
-    image: node:latest
     script:
         - cd Unit_tests
         - npm ci
@@ -33,7 +29,6 @@ Unit tests:
 
 API tests:
     stage: test
-    image: node:latest
     script:
         - cd API_tests
         - npm ci
@@ -41,7 +36,6 @@ API tests:
 
 UI tests_1:
     stage: test
-    image: node:18
     script:
         - cd UI_tests_1
         - npm ci
@@ -49,7 +43,6 @@ UI tests_1:
 
 UI tests_2:
     stage: test
-    image: node:18
     script:
         - cd UI_tests_2
         - npm ci
