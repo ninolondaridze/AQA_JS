@@ -1,11 +1,3 @@
-Build job:
-  stage: build
-  script:
-      - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-      - source ~/.nvm/nvm.sh
-      - nvm install 18
-      - nvm use 18
-
 Unit tests:
     stage: test
     image: node:latest
@@ -29,6 +21,10 @@ UI tests_1:
     stage: test
     image: node:latest
     script:
+        - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+        - source ~/.nvm/nvm.sh
+        - nvm install 18
+        - nvm use 18
         - cd UI_tests_1
         - npm ci
         - npm test    
@@ -37,6 +33,10 @@ UI tests_2:
     stage: test
     image: node:latest
     script:
+        - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+        - source ~/.nvm/nvm.sh
+        - nvm install 18
+        - nvm use 18
         - cd UI_tests_2
         - npm ci
         - npm test              
