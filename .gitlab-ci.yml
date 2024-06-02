@@ -27,7 +27,7 @@ Unit tests:
         - npm test
     artifacts:
         paths:
-            - mochawesome-report    
+            - mochawesome-report/mochawesome.html    
 
 API tests:
     stage: test
