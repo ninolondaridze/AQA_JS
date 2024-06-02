@@ -1,5 +1,6 @@
 exports.config = {
     hostname: 'selenium__standalone-chrome',
+    port: 4444,
     //
     // ====================
     // Runner Configuration
