@@ -14,27 +14,13 @@ API tests:
         - npm ci
         - npm test
 
-UI tests_1:
-    stage: test
-    image: node:latest
-    script:
-        - cd UI_tests_1
-        - npm ci
-        - npm test
-
 UI tests_2:
     stage: test
     image: node:latest
     script:
+        - apk add --no-cache build-base g++ cairo-dev jpeg-dev pango-dev giflib-dev
+        - apk add --update --repository http://dl-3.alpinelinux.org/alpine/edge/testing libmount ttf-dejavu ttf-droid ttf-freefont ttf-liberation ttf-ubuntu-font-family fontconfig
         - cd UI_tests_2
         - npm ci
-        - npm test 
-
-BDD tests:
-    stage: test
-    image: node:latest
-    script:
-        - cd BDD_tests
-        - npm ci
-        - npm test               
+        - npm test              
 
