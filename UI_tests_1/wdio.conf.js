@@ -1,6 +1,6 @@
 exports.config = {
 
-    hostname: 'selenium',
+    hostname: 'selenium__standalone-chrome',
     port: 4444, 
     //
     // ====================
