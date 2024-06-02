@@ -1,4 +1,7 @@
 exports.config = {
+
+    hostname: 'selenium',
+    port: 4444, 
     //
     // ====================
     // Runner Configuration
