@@ -8,7 +8,7 @@ UI test_1:
   script:
     - cd UI_tests_1
     - npm ci
-    - npm test --host=selenium__standalone-chrome
+    - npm test
     
 UI test_2:
   stage: test
