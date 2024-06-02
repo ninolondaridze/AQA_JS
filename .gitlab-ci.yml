@@ -10,14 +10,14 @@ e2e:firefox:
   services:
     - selenium/standalone-firefox
   script:
-    - npm run confidence-check --host=selenium__standalone-firefox
+    - npm test --host=selenium__standalone-firefox
 
 e2e:chrome:
   stage: confidence-check
   services:
     - selenium/standalone-chrome
   script:
-    - npm run confidence-check --host=selenium__standalone-chrome
+    - npm test --host=selenium__standalone-chrome
 
 Unit tests:
     stage: test
