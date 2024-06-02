@@ -22,6 +22,7 @@ UI tests_2:
     image: node:latest
     script:
         - cd UI_tests_2
+        - nvm use 18
         - npm ci
         - npm test              
 
