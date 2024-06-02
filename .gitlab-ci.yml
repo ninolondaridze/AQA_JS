@@ -22,6 +22,8 @@ UI tests_2:
     image: node:latest
     script:
         - cd UI_tests_2
+        - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+        - source ~/.nvm/nvm.sh
         - nvm use 18
         - npm ci
         - npm test              
