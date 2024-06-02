@@ -5,6 +5,9 @@ Unit tests:
         - cd Unit_tests
         - npm ci
         - npm test
+    artifacts:
+        paths:
+            - mochawesome-report    
 
 API tests:
     stage: test
