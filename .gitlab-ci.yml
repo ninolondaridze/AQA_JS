@@ -1,18 +1,23 @@
+default:
+  image: node:18
+
 stages:
   - confidence-check
   - test
 
-e2e_chrome:
+e2e:firefox:
   stage: confidence-check
-  image: node:18
   services:
-    - selenium/standalone-chrome:latest
-  variables:
-    SELENIUM_HOST: selenium__standalone-chrome
-  before_script:
-    - npm install
+    - selenium/standalone-firefox
   script:
-    - npm run confidence-check --host=$SELENIUM_HOST
+    - npm run confidence-check --host=selenium__standalone-firefox
+
+e2e:chrome:
+  stage: confidence-check
+  services:
+    - selenium/standalone-chrome
+  script:
+    - npm run confidence-check --host=selenium__standalone-chrome
 
 Unit tests:
     stage: test
