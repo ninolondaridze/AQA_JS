@@ -35,3 +35,7 @@ API tests:
         - cd API_tests
         - npm ci
         - npm test
+    artifacts:
+      paths:
+          - /builds/nino_londaridze/homeworks-automated-testing-with-js/API_tests/mochawesome-report/mochawesome.html
+        
