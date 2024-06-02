@@ -1,3 +1,19 @@
+stages:
+  - confidence-check
+  - test
+
+e2e_chrome:
+  stage: confidence-check
+  image: node:18
+  services:
+    - selenium/standalone-chrome:latest
+  variables:
+    SELENIUM_HOST: selenium__standalone-chrome
+  before_script:
+    - npm install
+  script:
+    - npm run confidence-check --host=$SELENIUM_HOST
+
 Unit tests:
     stage: test
     image: node:latest
@@ -20,13 +36,6 @@ API tests:
 UI tests_1:
     stage: test
     image: node:18
-    before_script:
-    - apt-get update
-    - apt-get install -y wget gnupg
-    - wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
-    - sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-    - apt-get update
-    - apt-get install -y google-chrome-stable
     script:
         - cd UI_tests_1
         - npm ci
