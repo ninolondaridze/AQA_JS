@@ -1,5 +1,5 @@
 exports.config = {
-  services: ['selenium-standalone'],
+    hostname: 'selenium__standalone-chrome',
     //
     // ====================
     // Runner Configuration
