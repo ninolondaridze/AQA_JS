@@ -1,20 +1,22 @@
 default:
   image: node:18
 
-UI_testing_1:
+UI test_1:
   stage: test
   services:
     - selenium/standalone-chrome
   script:
     - cd UI_tests_1
+    - npm ci
     - npm test --host=selenium__standalone-chrome
     
-UI_testing_2:
+UI test_2:
   stage: test
   services:
     - selenium/standalone-firefox
   script:
     - cd UI_tests_2
+    - npm ci
     - npm test --host=selenium__standalone-firefox
 
 Unit tests:
@@ -33,18 +35,3 @@ API tests:
         - cd API_tests
         - npm ci
         - npm test
-
-UI tests_1:
-    stage: test
-    script:
-        - cd UI_tests_1
-        - npm ci
-        - npm test    
-
-UI tests_2:
-    stage: test
-    script:
-        - cd UI_tests_2
-        - npm ci
-        - npm test              
-
