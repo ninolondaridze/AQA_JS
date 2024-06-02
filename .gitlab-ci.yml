@@ -14,4 +14,27 @@ API tests:
         - npm ci
         - npm test
 
+UI tests_1:
+    stage: test
+    image: node:latest
+    script:
+        - cd UI_tests_1
+        - npm ci
+        - npm test
+
+UI tests_2:
+    stage: test
+    image: node:latest
+    script:
+        - cd UI_tests_2
+        - npm ci
+        - npm test 
+
+BDD tests:
+    stage: test
+    image: node:latest
+    script:
+        - cd BDD_tests
+        - npm ci
+        - npm test               
 
