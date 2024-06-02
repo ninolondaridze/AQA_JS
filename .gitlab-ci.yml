@@ -17,6 +17,7 @@ e2e:chrome:
   services:
     - selenium/standalone-chrome
   script:
+    - cd UI_tests_1
     - npm test --host=selenium__standalone-chrome
 
 Unit tests:
