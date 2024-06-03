@@ -8,6 +8,14 @@ before_script:
 
 UI test_1:
   stage: test
+  services: 
+    - selenium/standalone-chrome
   script:
     - cd UI_tests_1
+    - npm run test --host=selenium__standalone-chrome
+
+UI test_2:
+  stage: test
+  script:
+    - cd UI_tests_2
     - npm run test
