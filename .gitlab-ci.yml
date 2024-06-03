@@ -14,10 +14,6 @@ UI test_1:
     - wget https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
     # Unzip the downloaded file
     - unzip chromedriver_linux64.zip
-    # Move the chromedriver to /usr/local/bin or another directory in your PATH
-    - mv chromedriver /usr/local/bin/
-    # Ensure the chromedriver is executable
-    - chmod +x /usr/local/bin/chromedriver
     - chromedriver --version
     - google-chrome --version
     - npm run test
