@@ -8,6 +8,8 @@ before_script:
 
 UI test_1:
   stage: test
+  services:
+    - name: selenium/standalone-chrome:latest 
   script:
     - cd UI_tests_1
     - npm run test
