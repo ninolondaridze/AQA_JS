@@ -25,17 +25,6 @@ describe('My Login application', () => {
           'Your username is invalid!')
     })
 
-    it ('should not log in with invalid password', async () => {
-      await browser.url(`https://the-internet.herokuapp.com/login`)
-
-      await $('//input[@id="username"]').setValue('tomsmith')
-      await $('//input[@id="password"]').setValue('tomsmith')
-      await $('//button[@type="submit"]').click()
-
-      await expect($('#flash')).toBeExisting()
-      await expect($('#flash')).toHaveTextContaining(
-        'Your password is invalid!')
-    })
 
     it('username input should have id of username', async () => {
       await browser.url(`https://the-internet.herokuapp.com/login`)

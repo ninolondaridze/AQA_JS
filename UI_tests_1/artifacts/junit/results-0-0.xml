@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="6" failures="1" errors="0" skipped="0">
-  <testsuite name="My Login application" timestamp="2024-06-03T19:47:07" time="7.228" tests="6" failures="1" errors="0" skipped="0">
+<testsuites tests="5" failures="0" errors="0" skipped="0">
+  <testsuite name="My Login application" timestamp="2024-06-03T20:18:46" time="6.884" tests="5" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="My Login application"/>
       <property name="capabilities" value="chrome.125_0_0_0.10_0_22631"/>
       <property name="file" value="file:///C:/Users/Nino_Londaridze/Desktop/Automated_JS/homeworks-automated-testing-with-js/UI_tests_1/test/specs/test.e2e.js"/>
     </properties>
-    <testcase classname="chrome.125_0_0_0.10_0_22631.My_Login_application" name="should login with valid credentials" time="4.091">
+    <testcase classname="chrome.125_0_0_0.10_0_22631.My_Login_application" name="should login with valid credentials" time="4.832">
       <system-out><![CDATA[
 COMMAND: navigateTo - {"url":"https://the-internet.herokuapp.com/login"}
 RESULT: undefined
@@ -37,7 +37,7 @@ COMMAND: getElementText - {"elementId":"ELEMENT-6"}
 RESULT: undefined
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.125_0_0_0.10_0_22631.My_Login_application" name="should not login with invalid name" time="1.069">
+    <testcase classname="chrome.125_0_0_0.10_0_22631.My_Login_application" name="should not login with invalid name" time="1.034">
       <system-out><![CDATA[
 COMMAND: navigateTo - {"url":"https://the-internet.herokuapp.com/login"}
 RESULT: undefined
@@ -67,68 +67,35 @@ COMMAND: getElementText - {"elementId":"ELEMENT-12"}
 RESULT: undefined
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.125_0_0_0.10_0_22631.My_Login_application" name="should not log in with invalid password" time="1.116">
-      <failure message="Waiting for selector `#flash` failed: Waiting failed: 500ms exceeded"/>
-      <system-out><![CDATA[
-COMMAND: navigateTo - {"url":"https://the-internet.herokuapp.com/login"}
-RESULT: undefined
-COMMAND: findElement - {"using":"xpath","value":"//input[@id=\"username\"]"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-13"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-13","text":"tomsmith"}
-RESULT: undefined
-COMMAND: findElement - {"using":"xpath","value":"//input[@id=\"password\"]"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-14"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-14","text":"tomsmith"}
-RESULT: undefined
-COMMAND: findElement - {"using":"xpath","value":"//button[@type=\"submit\"]"}
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-15"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"#flash"}
-COMMAND: takeScreenshot - {}
-RESULT: undefined
-]]></system-out>
-      <system-err><![CDATA[
-Waiting for selector `#flash` failed: Waiting failed: 500ms exceeded
-TimeoutError: Waiting for selector `#flash` failed: Waiting failed: 500ms exceeded
-    at Timeout.<anonymous> (file:///C:/Users/Nino_Londaridze/Desktop/Automated_JS/homeworks-automated-testing-with-js/node_modules/puppeteer-core/lib/esm/puppeteer/common/WaitTask.js:69:37)
-    at listOnTimeout (node:internal/timers:569:17)
-    at process.processTimers (node:internal/timers:512:7)
-]]></system-err>
-    </testcase>
-    <testcase classname="chrome.125_0_0_0.10_0_22631.My_Login_application" name="username input should have id of username" time="0.306">
+    <testcase classname="chrome.125_0_0_0.10_0_22631.My_Login_application" name="username input should have id of username" time="0.373">
       <system-out><![CDATA[
 COMMAND: navigateTo - {"url":"https://the-internet.herokuapp.com/login"}
 RESULT: undefined
 COMMAND: findElement - {"using":"css selector","value":"#username"}
 RESULT: undefined
-COMMAND: getElementAttribute - {"elementId":"ELEMENT-16","name":"id"}
+COMMAND: getElementAttribute - {"elementId":"ELEMENT-13","name":"id"}
 RESULT: undefined
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.125_0_0_0.10_0_22631.My_Login_application" name="passwrod input should have id of password" time="0.305">
+    <testcase classname="chrome.125_0_0_0.10_0_22631.My_Login_application" name="passwrod input should have id of password" time="0.308">
       <system-out><![CDATA[
 COMMAND: navigateTo - {"url":"https://the-internet.herokuapp.com/login"}
 RESULT: undefined
 COMMAND: findElement - {"using":"css selector","value":"#password"}
 RESULT: undefined
-COMMAND: getElementAttribute - {"elementId":"ELEMENT-17","name":"id"}
+COMMAND: getElementAttribute - {"elementId":"ELEMENT-14","name":"id"}
 RESULT: undefined
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.125_0_0_0.10_0_22631.My_Login_application" name="flash message should have id of flash" time="0.339">
+    <testcase classname="chrome.125_0_0_0.10_0_22631.My_Login_application" name="flash message should have id of flash" time="0.336">
       <system-out><![CDATA[
 COMMAND: navigateTo - {"url":"https://the-internet.herokuapp.com/login"}
 RESULT: undefined
 COMMAND: findElement - {"using":"xpath","value":"//button[@class=\"radius\"]"}
 RESULT: undefined
-COMMAND: executeScript - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ELEMENT-18","ELEMENT":"ELEMENT-18"}]}
+COMMAND: executeScript - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ELEMENT-15","ELEMENT":"ELEMENT-15"}]}
 RESULT: undefined
-COMMAND: executeScript - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ELEMENT-18","ELEMENT":"ELEMENT-18"}]}
+COMMAND: executeScript - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ELEMENT-15","ELEMENT":"ELEMENT-15"}]}
 RESULT: undefined
 COMMAND: deleteSession - {}
 RESULT: undefined
