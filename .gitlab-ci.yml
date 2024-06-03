@@ -10,10 +10,4 @@ UI test_1:
   stage: test
   script:
     - cd UI_tests_1
-    # Download ChromeDriver
-    - wget https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
-    # Unzip the downloaded file
-    - unzip chromedriver_linux64.zip
-    - chromedriver --version
-    - google-chrome --version
     - npm run test
