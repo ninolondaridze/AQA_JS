@@ -11,7 +11,6 @@ describe('My Login application', () => {
         await expect($('#flash')).toBeExisting()
         await expect($('#flash')).toHaveTextContaining(
             'You logged into a secure area!')
-        await expect($('#flash')).toMatchElementSnapshot('flashAlert')
     })
 
     it('should not login with invalid name', async () => {

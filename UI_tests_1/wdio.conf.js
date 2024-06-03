@@ -1,6 +1,4 @@
 exports.config = {
-    hostname: 'selenium__standalone-chrome',
-    port: 4444,
     //
     // ====================
     // Runner Configuration
@@ -46,6 +44,7 @@ exports.config = {
     // from the same test should run tests.
     //
     maxInstances: 1,
+    //automationProtocol: 'devtools',
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -102,7 +101,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    // services: [],
+    //services: ['chromedriver', 'geckodriver'],
     //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -186,8 +185,20 @@ exports.config = {
      * @param {Array.<String>} specs        List of spec file paths that are to be run
      * @param {object}         browser      instance of created browser/device session
      */
-    // before: function (capabilities, specs) {
-    // },
+
+  /*   async before(capabilities, specs) {
+      // eslint-disable-next-line global-require
+      const { setOptions } = await import('expect-webdriverio');
+      setOptions({
+        wait: 10000,
+        interval: 250,
+      });
+  
+      await browser.setWindowSize(1920, 1080);
+      await browser.setTimeout({
+        implicit: 1000,
+      });
+    }, */
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {string} commandName hook command name
