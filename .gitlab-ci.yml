@@ -3,13 +3,11 @@ default:
 
 UI test_1:
   stage: test
-  services:
-    - selenium/standalone-chrome
   image: ghcr.io/puppeteer/puppeteer:latest
   script:
     - cd UI_tests_1
     - npm ci
-    - npm test --host=selenium__standalone-chrome
+    - npm test
     
 UI test_2:
   stage: test
