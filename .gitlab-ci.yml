@@ -1,10 +1,9 @@
 stages:
   - test
 
-image: ghcr.io/puppeteer/puppeteer:latest
-
 UI test_1:
   stage: test
+  image: ghcr.io/puppeteer/puppeteer:latest
   script:
     - cd UI_tests_1
     - npm ci
