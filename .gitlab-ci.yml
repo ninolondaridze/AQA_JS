@@ -6,14 +6,29 @@ image: ghcr.io/puppeteer/puppeteer:latest
 before_script:
   - npm ci
 
-UI test_1:
+UI tests:
   stage: test
   script:
-    - cd UI_tests_1
-    - npm run test
+   - cd UI_tests
+   - npm run test
+  artifacts:
+    paths:
+      - /builds/nino_londaridze/homeworks-automated-testing-with-js/Unit_tests/mochawesome-report/mochawesome.json
 
-UI test_2:
+Unit tests:
   stage: test
   script:
-    - cd UI_tests_2
-    - npm run test
+      - cd Unit_tests
+      - npm test
+  artifacts:
+    paths:
+        - /builds/nino_londaridze/homeworks-automated-testing-with-js/Unit_tests/mochawesome-report/mochawesome.json
+
+API tests:
+  stage: test
+  script:
+      - cd API_tests
+      - npm test
+  artifacts:
+    paths:
+      - /builds/nino_londaridze/homeworks-automated-testing-with-js/API_tests/mochawesome-report/mochawesome.json
