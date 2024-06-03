@@ -1,29 +1,29 @@
-default:
-  image: node:18
+stages:
+  - test
+
+image: ghcr.io/puppeteer/puppeteer:latest
+
+before_script:
+  - npm ci
 
 UI test_1:
   stage: test
-  image: ghcr.io/puppeteer/puppeteer:latest
   script:
     - cd UI_tests_1
-    - npm ci
     - npm test
     
 UI test_2:
   stage: test
   services:
     - selenium/standalone-firefox
-  image: ghcr.io/puppeteer/puppeteer:latest  
   script:
     - cd UI_tests_2
-    - npm ci
     - npm test --host=selenium__standalone-firefox
 
 Unit tests:
     stage: test
     script:
         - cd Unit_tests
-        - npm ci
         - npm test
     artifacts:
         paths:
@@ -33,7 +33,6 @@ API tests:
     stage: test
     script:
         - cd API_tests
-        - npm ci
         - npm test
     artifacts:
       paths:
