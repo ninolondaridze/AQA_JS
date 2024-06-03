@@ -22,7 +22,7 @@ Unit tests:
       - npm test
   artifacts:
     paths:
-        - /builds/nino_londaridze/homeworks-automated-testing-with-js/Unit_tests/mochawesome-report/mochawesome.json
+     - /builds/nino_londaridze/homeworks-automated-testing-with-js/Unit_tests/mochawesome-report/mochawesome.json
 
 API tests:
   stage: test
