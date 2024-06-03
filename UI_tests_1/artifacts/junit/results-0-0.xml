@@ -1,104 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites tests="5" failures="0" errors="0" skipped="0">
-  <testsuite name="My Login application" timestamp="2024-06-03T20:18:46" time="6.884" tests="5" failures="0" errors="0" skipped="0">
+  <testsuite name="My Login application" timestamp="2024-06-03T21:17:15" time="5.049" tests="5" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="My Login application"/>
-      <property name="capabilities" value="chrome.125_0_0_0.10_0_22631"/>
+      <property name="capabilities" value="chrome.125_0_6422_114.windows"/>
       <property name="file" value="file:///C:/Users/Nino_Londaridze/Desktop/Automated_JS/homeworks-automated-testing-with-js/UI_tests_1/test/specs/test.e2e.js"/>
     </properties>
-    <testcase classname="chrome.125_0_0_0.10_0_22631.My_Login_application" name="should login with valid credentials" time="4.832">
+    <testcase classname="chrome.125_0_6422_114.windows.My_Login_application" name="should login with valid credentials" time="3.443">
       <system-out><![CDATA[
-COMMAND: navigateTo - {"url":"https://the-internet.herokuapp.com/login"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"#username"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-1"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-1","text":"tomsmith"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"#password"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-2"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-2","text":"SuperSecretPassword!"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"button[type=\"submit\"]"}
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-3"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"#flash"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"#flash"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"#flash"}
-RESULT: undefined
-COMMAND: getElementText - {"elementId":"ELEMENT-6"}
-RESULT: undefined
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/url - {"url":"https://the-internet.herokuapp.com/login"}
+RESULT: {"url":"https://the-internet.herokuapp.com/login"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element - {"using":"css selector","value":"#username"}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element/f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.57887DE1445958F667AACD925D3F52D5.e.4/clear - {}
+RESULT: {}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element/f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.57887DE1445958F667AACD925D3F52D5.e.4/value - {"text":"tomsmith"}
+RESULT: {"text":"tomsmith"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element/f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.57887DE1445958F667AACD925D3F52D5.e.5/clear - {}
+RESULT: {}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element/f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.57887DE1445958F667AACD925D3F52D5.e.5/value - {"text":"SuperSecretPassword!"}
+RESULT: {"text":"SuperSecretPassword!"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element - {"using":"css selector","value":"button[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"button[type=\"submit\"]"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element/f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.57887DE1445958F667AACD925D3F52D5.e.6/click - {}
+RESULT: {}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element - {"using":"css selector","value":"#flash"}
+RESULT: {"using":"css selector","value":"#flash"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/elements - {"using":"css selector","value":"#flash"}
+RESULT: {"using":"css selector","value":"#flash"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element - {"using":"css selector","value":"#flash"}
+RESULT: {"using":"css selector","value":"#flash"}
+COMMAND: GET /session/964bec2e9b12800c1cfba445cce21b00/element/f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.18DED568600459FADCC216AE25A29C1C.e.13/text - {}
+RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.125_0_0_0.10_0_22631.My_Login_application" name="should not login with invalid name" time="1.034">
+    <testcase classname="chrome.125_0_6422_114.windows.My_Login_application" name="should not login with invalid name" time="0.884">
       <system-out><![CDATA[
-COMMAND: navigateTo - {"url":"https://the-internet.herokuapp.com/login"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"#username"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-7"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-7","text":"jondoe"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"#password"}
-RESULT: undefined
-COMMAND: elementClear - {"elementId":"ELEMENT-8"}
-RESULT: undefined
-COMMAND: elementSendKeys - {"elementId":"ELEMENT-8","text":"SuperSecretPassword!"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"button[type=\"submit\"]"}
-RESULT: undefined
-COMMAND: elementClick - {"elementId":"ELEMENT-9"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"#flash"}
-RESULT: undefined
-COMMAND: findElements - {"using":"css selector","value":"#flash"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"#flash"}
-RESULT: undefined
-COMMAND: getElementText - {"elementId":"ELEMENT-12"}
-RESULT: undefined
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/url - {"url":"https://the-internet.herokuapp.com/login"}
+RESULT: {"url":"https://the-internet.herokuapp.com/login"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element - {"using":"css selector","value":"#username"}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element/f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.9975A8656BF1EF1E899159AD84EBBBD6.e.16/clear - {}
+RESULT: {}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element/f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.9975A8656BF1EF1E899159AD84EBBBD6.e.16/value - {"text":"jondoe"}
+RESULT: {"text":"jondoe"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element/f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.9975A8656BF1EF1E899159AD84EBBBD6.e.17/clear - {}
+RESULT: {}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element/f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.9975A8656BF1EF1E899159AD84EBBBD6.e.17/value - {"text":"SuperSecretPassword!"}
+RESULT: {"text":"SuperSecretPassword!"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element - {"using":"css selector","value":"button[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"button[type=\"submit\"]"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element/f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.9975A8656BF1EF1E899159AD84EBBBD6.e.18/click - {}
+RESULT: {}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element - {"using":"css selector","value":"#flash"}
+RESULT: {"using":"css selector","value":"#flash"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/elements - {"using":"css selector","value":"#flash"}
+RESULT: {"using":"css selector","value":"#flash"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element - {"using":"css selector","value":"#flash"}
+RESULT: {"using":"css selector","value":"#flash"}
+COMMAND: GET /session/964bec2e9b12800c1cfba445cce21b00/element/f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.1B499CA266EF5D3FD589A4E195E21DD3.e.31/text - {}
+RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.125_0_0_0.10_0_22631.My_Login_application" name="username input should have id of username" time="0.373">
+    <testcase classname="chrome.125_0_6422_114.windows.My_Login_application" name="username input should have id of username" time="0.236">
       <system-out><![CDATA[
-COMMAND: navigateTo - {"url":"https://the-internet.herokuapp.com/login"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"#username"}
-RESULT: undefined
-COMMAND: getElementAttribute - {"elementId":"ELEMENT-13","name":"id"}
-RESULT: undefined
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/url - {"url":"https://the-internet.herokuapp.com/login"}
+RESULT: {"url":"https://the-internet.herokuapp.com/login"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element - {"using":"css selector","value":"#username"}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: GET /session/964bec2e9b12800c1cfba445cce21b00/element/f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.38F323EB59900A8BD1FCC9BC242058D7.e.36/attribute/id - {}
+RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.125_0_0_0.10_0_22631.My_Login_application" name="passwrod input should have id of password" time="0.308">
+    <testcase classname="chrome.125_0_6422_114.windows.My_Login_application" name="passwrod input should have id of password" time="0.235">
       <system-out><![CDATA[
-COMMAND: navigateTo - {"url":"https://the-internet.herokuapp.com/login"}
-RESULT: undefined
-COMMAND: findElement - {"using":"css selector","value":"#password"}
-RESULT: undefined
-COMMAND: getElementAttribute - {"elementId":"ELEMENT-14","name":"id"}
-RESULT: undefined
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/url - {"url":"https://the-internet.herokuapp.com/login"}
+RESULT: {"url":"https://the-internet.herokuapp.com/login"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element - {"using":"css selector","value":"#password"}
+RESULT: {"using":"css selector","value":"#password"}
+COMMAND: GET /session/964bec2e9b12800c1cfba445cce21b00/element/f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.92F2F40D194FBD5B3BC455C057171987.e.44/attribute/id - {}
+RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.125_0_0_0.10_0_22631.My_Login_application" name="flash message should have id of flash" time="0.336">
+    <testcase classname="chrome.125_0_6422_114.windows.My_Login_application" name="flash message should have id of flash" time="0.248">
       <system-out><![CDATA[
-COMMAND: navigateTo - {"url":"https://the-internet.herokuapp.com/login"}
-RESULT: undefined
-COMMAND: findElement - {"using":"xpath","value":"//button[@class=\"radius\"]"}
-RESULT: undefined
-COMMAND: executeScript - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ELEMENT-15","ELEMENT":"ELEMENT-15"}]}
-RESULT: undefined
-COMMAND: executeScript - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ELEMENT-15","ELEMENT":"ELEMENT-15"}]}
-RESULT: undefined
-COMMAND: deleteSession - {}
-RESULT: undefined
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/url - {"url":"https://the-internet.herokuapp.com/login"}
+RESULT: {"url":"https://the-internet.herokuapp.com/login"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/element - {"using":"xpath","value":"//button[@class=\"radius\"]"}
+RESULT: {"using":"xpath","value":"//button[@class=\"radius\"]"}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.3ECDCFDD9DB0FBA67FE8FDEC60FF87C6.e.52","ELEMENT":"f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.3ECDCFDD9DB0FBA67FE8FDEC60FF87C6.e.52"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (8289 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.3ECDCFDD9DB0FBA67FE8FDEC60FF87C6.e.52","ELEMENT":"f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.3ECDCFDD9DB0FBA67FE8FDEC60FF87C6.e.52"}]}
+COMMAND: POST /session/964bec2e9b12800c1cfba445cce21b00/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.3ECDCFDD9DB0FBA67FE8FDEC60FF87C6.e.52","ELEMENT":"f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.3ECDCFDD9DB0FBA67FE8FDEC60FF87C6.e.52"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (5343 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.3ECDCFDD9DB0FBA67FE8FDEC60FF87C6.e.52","ELEMENT":"f.0FA91F0933CBC7E40D55B0E2E456C7E3.d.3ECDCFDD9DB0FBA67FE8FDEC60FF87C6.e.52"}]}
+COMMAND: DELETE /session/964bec2e9b12800c1cfba445cce21b00 - {}
+RESULT: {}
 ]]></system-out>
     </testcase>
   </testsuite>
