@@ -10,6 +10,8 @@ UI test_1:
   stage: test
   script:
     - cd UI_tests_1
+    - sudo apt-get update
+    - sudo apt-get install -y chromedriver
     - chromedriver --version
     - google-chrome --version
     - npm run test
