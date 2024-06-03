@@ -29,7 +29,8 @@
     "prettier": "^2.8.8",
     "rimraf": "^5.0.1",
     "wdio-chromedriver-service": "^8.1.1",
-    "wdio-geckodriver-service": "^5.0.2"
+    "wdio-geckodriver-service": "^5.0.2",
+    "devtools": "^8.38.0"
   },
   "workspaces": [
     "API_tests",
