@@ -1,5 +1,5 @@
 {
-  "name": "module_3.1",
+  "name": "module_3.2",
   "scripts": {
     "test": "wdio run ./src/config/wdio.conf.js"
   },
