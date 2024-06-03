@@ -10,4 +10,6 @@ UI test_1:
   stage: test
   script:
     - cd UI_tests_1
+    - chromedriver --version
+    - google-chrome --version
     - npm run test
