@@ -1,4 +1,4 @@
-import {NumbersValidator} from "../../app/numbers_validator.js";
+import {NumbersValidator} from '../../app/numbers_validator.js';
 import {expect} from 'chai';
 
 describe('isNumberEven test', () => {
@@ -34,14 +34,14 @@ describe('isNumberEven test', () => {
 
   it('should return an error if array is not full of numbers', () => {
     const arraOfValues = [5, '2', 11, 22];
-    expect(() => 
-      validator.getEvenNumbersFromArray(arraOfValues)
+    expect(() =>
+      validator.getEvenNumbersFromArray(arraOfValues),
     ).to.throw('[5,2,11,22] is not an array of "Numbers"');
   });
 
   it('should return an error if passed value is not integer', () => {
-    expect(() => 
-      validator.isInteger('4')
+    expect(() =>
+      validator.isInteger('4'),
     ).to.throw('[4] is not a number');
   });
 
@@ -53,10 +53,9 @@ describe('isNumberEven test', () => {
   it('should return an error if array is not full of numbers', () => {
     const arraOfValues = [1, 2, '3'];
     expect(validator.isAllNumbers(arraOfValues)).to.be.equal(false);
-  })
+  });
 
   it('should return an error if array is not full of numbers', () => {
-    expect(() => validator.isAllNumbers('3')).to.throw(`[3] is not an array`)
-  })
-
+    expect(() => validator.isAllNumbers('3')).to.throw(`[3] is not an array`);
+  });
 });
